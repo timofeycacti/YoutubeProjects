@@ -1,7 +1,7 @@
 let tickk = 0;
 
 function onPlayerChangeBlock(id, x, y, z, from, to, nu, nu2, nu3) {
-    if (to === "White Wool") {
+    if (to === "White Wool" || to=="Black Wool") {
         let curdata = api.getMoonstoneChestItemSlot("-1", 0)["attributes"]["customAttributes"]["blocks"];
         console.log(curdata);
         curdata.push([x, y, z]);
